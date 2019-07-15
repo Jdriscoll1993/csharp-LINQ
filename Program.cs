@@ -147,14 +147,7 @@ namespace LINQed_list
                 Console.WriteLine($"{millionBoys.Key} {millionBoys.Count()}");
             }
 
-            var millionaireReport = from millionaire in millionaires group millionaires by millionaire.Bank into mills orderby mills.Key select mills;
-
-
-            // foreach (var item in millionaireReport)
-            // {
-            //     Console.WriteLine($"{item.CustomerName} at {item.BankName}");
-            // }
-
         }
     }
 }
+
